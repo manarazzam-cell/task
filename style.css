@@ -1,0 +1,34 @@
+.product_1{
+    border: 5px solid red;
+    padding: 10px;
+}
+.product_2{
+    border: 6px dotted blue;
+    padding: 10px;
+}
+p{
+    color: rgb(211, 211, 24);
+ }
+    hr{
+    border: 2px solid red;
+      
+}
+#p3{
+    border: 4px solid black;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 10px;
+}
+#p6{
+    border: 4px solid black;display: flex;
+    justify-content: space-around;
+gap: 40px;
+padding: 10px;
+}
+.line{
+    border-bottom: 5px dashed blue;
+    padding: 15px;
+    
+}
+ 
