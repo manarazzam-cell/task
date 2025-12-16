@@ -1,0 +1,27 @@
+ body{
+    height:100vh;display:flex;
+    justify-content:center;align-items:center;
+     font-family:Arial;
+   background-image: url("photo_2025-12-16_15-54-19.jpg");
+}
+.task{
+    background: pink;
+    color:grey;
+    padding:30px;border-radius:12px;
+    width:300px;text-align:center;
+    border-radius:15px ;
+}
+input{width:100%;
+    padding:8px;
+    margin-top:8px}
+li{background:rgb(246, 204, 211);margin-top:5px;padding:6px;cursor:pointer}
+button{
+    width: 50%;
+    padding: 8px;
+    margin-top: 8px;
+    background-color: rgb(240, 233, 233);
+    border:5px ,solid,gainsboro;
+    border-radius: 10px;
+    color: gray;
+}
+ 
