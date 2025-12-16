@@ -1,25 +1,20 @@
-  let tasks=[];
-const input=document.getElementById("Input"),
-list=document.getElementById("List"),
-addBtn=document.getElementById("addBtn"),
-mode=document.getElementById("mode"),
-task=document.querySelector(".task");
+const input = document.getElementById("Input");
+const list = document.getElementById("List");
+const addBtn = document.getElementById("addBtn");
+const app = document.querySelector(".task");
 
-addBtn.onclick=function(){
-    if(!input.value) return;
-    tasks.push(input.value);
-    input.value="";
-    show();
-};
+addBtn.addEventListener("click", addTask);
 
-function show(){
-    list.innerHTML="";
-    tasks.forEach((t,i)=>{
-        const li=document.createElement("li");
-        li.textContent=t;
-        li.onclick=()=>{tasks.splice(i,1);show();}
-        list.appendChild(li);
+function addTask() {
+    const text = input.value.trim();
+    if (text === "") return;
+
+    const li = document.createElement("li");
+    li.innerText = text;
+    li.addEventListener("click", () => {
+        li.remove();
     });
-}
-
+    list.appendChild(li);
+    input.value = "";
+};
  
